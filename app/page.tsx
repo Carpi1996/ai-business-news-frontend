@@ -1,3 +1,5 @@
+import LeadForm from "./components/LeadForm";
+
 async function getArticles() {
 const res = await fetch(
 "https://ai-business-news-api.onrender.com/articles",
@@ -38,6 +40,8 @@ fontSize: "18px",
 >
 Daily insights about AI, business and productivity.
 </p>
+
+<LeadForm />
 
 <div
 style={{
