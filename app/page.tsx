@@ -23,43 +23,78 @@ fontFamily: "Arial",
 >
 <h1
 style={{
-fontSize: "42px",
-marginBottom: "40px",
+fontSize: "48px",
+marginBottom: "12px",
 }}
 >
 AI Business Daily </h1>
 
+<p
+style={{
+color: "#666",
+marginBottom: "40px",
+fontSize: "18px",
+}}
+>
+Daily insights about AI, business and productivity.
+</p>
+
+<div
+style={{
+display: "flex",
+flexDirection: "column",
+gap: "24px",
+}}
+>
 {articles.map((article: any) => (
-    <article
-      key={article.id}
-      style={{
-        border: "1px solid #ddd",
-        borderRadius: "12px",
-        padding: "24px",
-        marginBottom: "24px",
-      }}
-    >
-      <h2>{article.title}</h2>
+<a
+key={article.slug}
+href={`/articles/${article.slug}`}
+style={{
+textDecoration: "none",
+color: "inherit",
+}}
+>
+<article
+style={{
+background: "white",
+borderRadius: "16px",
+padding: "28px",
+border: "1px solid #e5e7eb",
+transition: "all 0.2s ease",
+}}
+>
+<h2
+style={{
+fontSize: "28px",
+marginBottom: "12px",
+}}
+>
+{article.title}
+</h2>
 
-      <p
-        style={{
-          color: "#666",
-          marginBottom: "16px",
-        }}
-      >
-        {article.summary}
-      </p>
+<p
+style={{
+color: "#555",
+lineHeight: 1.7,
+marginBottom: "16px",
+}}
+>
+{article.summary}
+</p>
 
-      <div
-        style={{
-          whiteSpace: "pre-wrap",
-          lineHeight: 1.6,
-        }}
-      >
-        {article.content}
-      </div>
-    </article>
-  ))}
+<span
+style={{
+color: "#2563eb",
+fontWeight: "bold",
+}}
+>
+Read article →
+</span>
+</article>
+</a>
+))}
+</div>
 </main>
 );
 }
