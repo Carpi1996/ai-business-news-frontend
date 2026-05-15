@@ -69,6 +69,9 @@ padding: "14px 16px",
 borderRadius: "10px",
 border: "1px solid #374151",
 fontSize: "16px",
+backgroundColor: "#1f2937",
+color: "white",
+transition: "border-color 0.2s ease",
 }}
 />
 
@@ -83,7 +86,9 @@ background: "#2563eb",
 color: "white",
 fontWeight: "bold",
 fontSize: "16px",
-cursor: "pointer",
+cursor: status === "loading" ? "not-allowed" : "pointer",
+opacity: status === "loading" ? 0.8 : 1,
+transition: "all 0.2s ease",
 }}
 >
 {status === "loading" ? "Joining..." : "Join newsletter"}
@@ -91,13 +96,21 @@ cursor: "pointer",
 </form>
 
 {status === "success" && (
-<p style={{ color: "#86efac", marginTop: "16px" }}>
-You are in! Thanks for joining.
+<p style={{ 
+color: "#86efac", 
+marginTop: "20px",
+animation: "fadeIn 0.3s ease",
+}}>
+Thanks! Check your inbox soon 🚀
 </p>
 )}
 
 {status === "error" && (
-<p style={{ color: "#fca5a5", marginTop: "16px" }}>
+<p style={{ 
+color: "#fca5a5", 
+marginTop: "20px",
+animation: "fadeIn 0.3s ease",
+}}>
 Something went wrong. Please try again.
 </p>
 )}
