@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  }
+
+html,
+body {
+padding: 0;
+margin: 0;
+background: #f5f7fb;
+color: #111;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+margin-top: 0;
+}
+
+article {
+background: white;
+transition: all 0.2s ease;
+}
+
+article:hover {
+transform: translateY(-2px);
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
