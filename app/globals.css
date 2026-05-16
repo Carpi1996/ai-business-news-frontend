@@ -27,3 +27,64 @@ article:hover {
 transform: translateY(-2px);
 box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
+
+.article-content {
+  font-size: 18px;
+  line-height: 1.85;
+  color: #111827;
+}
+
+.article-content h1 {
+  display: none;
+}
+
+.article-content h2 {
+  font-size: 30px;
+  line-height: 1.25;
+  margin-top: 42px;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.article-content h3 {
+  font-size: 23px;
+  line-height: 1.35;
+  margin-top: 34px;
+  margin-bottom: 12px;
+}
+
+.article-content p {
+  margin-bottom: 20px;
+}
+
+.article-content ul,
+.article-content ol {
+  padding-left: 24px;
+  margin-bottom: 24px;
+}
+
+.article-content li {
+  margin-bottom: 10px;
+}
+
+.article-content strong {
+  font-weight: 700;
+}
+
+.article-content blockquote {
+  border-left: 4px solid #2563eb;
+  padding-left: 18px;
+  color: #374151;
+  margin: 28px 0;
+}
+
+.article-content hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 36px 0;
+}
+
+.article-content a {
+  color: #2563eb;
+  font-weight: 600;
+}
