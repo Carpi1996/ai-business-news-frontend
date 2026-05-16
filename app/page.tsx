@@ -68,6 +68,18 @@ border: "1px solid #e5e7eb",
 transition: "all 0.2s ease",
 }}
 >
+<p
+  style={{
+    color: "#2563eb",
+    fontSize: "13px",
+    fontWeight: "bold",
+    textTransform: "uppercase",
+    letterSpacing: "0.08em",
+    marginBottom: "10px",
+  }}
+>
+  Edition #{article.id}
+</p>
 <h2
 style={{
 fontSize: "28px",
