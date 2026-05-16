@@ -73,6 +73,18 @@ export default async function ArticlePage({
           boxShadow: "0 8px 24px rgba(0, 0, 0, 0.04)",
         }}
       >
+        <p
+  style={{
+    color: "#2563eb",
+    fontSize: "13px",
+    fontWeight: "bold",
+    textTransform: "uppercase",
+    letterSpacing: "0.08em",
+    marginBottom: "12px",
+  }}
+>
+  AI Business Daily #{article.id}
+</p>
         <h1
           style={{
             fontSize: "42px",
